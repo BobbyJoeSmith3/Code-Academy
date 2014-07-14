@@ -199,3 +199,73 @@ Advanced printing techniques
 	g = "Golf"
 	h = "Hotel"
 	print "%s, %s" % (g, h)
+
+
+THE DATETIME LIBRARY
+A lot of times you want to keep track of when something happened. We can do so in Python using datetime.
+
+
+GETTING THE CURRENT DATE AND TIME
+We can use a function called datetime.now() to retrieve the current date and time.
+
+	from datetime import datetime
+	print datetime.now()
+
+The first line imports the datetime library so that we can use it.
+The second line will print out the current date and time.
+
+
+EXTRACTING INFORMATION
+Notice how the output looks like 2013-11-25 23:45:14.317454. What if you don't want the entire date and time?
+
+	from datetime import datetime
+	now = datetime.now()
+
+	current_year = now.year
+	current_month = now.month
+	current_day = now.day
+
+You already have the first two lines.
+
+In the third line, we take the year (and only the year) from the variable now and store it in current_year.
+
+In the fourth and fifth lines, we store the month and day from now.
+
+
+HOTDATE
+What if we want to print today's date in the following format? mm/dd/yyyy. Let's use string substitution again!
+
+	from datetime import datetime
+	now = datetime.now()
+
+	print '%s-%s-%s' % (now.year, now.month, now.day)
+	# will print: 2014-02-19
+
+Remember that the % operator will fill the %s placeholders in the string on the left with the strings in the parentheses on the right.
+
+In the above example, we print 2014-02-19 (if today is February 19th, 2014), but you are going to print out 02/19/2014.
+
+
+PRETTY TIME
+Nice work! Let's do the same for the hour, minute, and second.
+
+	from datetime import datetime
+	now = datetime.now()
+
+	print now.hour
+	print now.minute
+	print now.second
+
+In the above example, we just printed the current hour, then the current minute, then the current second.
+
+
+GRAND FINALE
+We've managed to print the date and time separately in a very pretty fashion. Let's combine the two!
+
+	from datetime import datetime
+	now = datetime.now()
+
+	print '%s/%s/%s' % (now.month, now.day, now.year)
+	print '%s:%s:%s' % (now.hour, now.minute, now.second)
+	
+The example above will print out the date, then on a separate line it will print the time.
