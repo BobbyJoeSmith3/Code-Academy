@@ -12,12 +12,19 @@ Display the translation result.
 print 'Welcome to the Pig Latin Translator!'
 
 # Start coding here!
+
+# Set variable 'original' equal to user input
 original = raw_input("Enter a word: ")
+# Set variable 'pyg' equal to the suffix
+pyg = "ay"
 
 # Write an if statement that verifies that the string has characters.
 if (len(original) > 0) and original.isalpha():
-    print original
+    word = original.lower()		#Set user entry to lowercase
+    first = word[0]				#Set variable 'first' to the first letter of the variable 'word'
+    new_word = word[1:len(word)] + first + pyg  #Concatenate variables to create new phrase in pyglatin
+    print new_word
 elif (len(original) > 0) and original.isalpha() == False:
-    print "no numbers or symbols please!"
+    print "no numbers, symbols, or spaces please!"
 else:
     print "empty"

@@ -427,3 +427,46 @@ Let's make sure the word the user enters contains only alphabetical characters. 
 
 TESTING
 When you finish one part of your program, it's important to test it multiple times, using a variety of inputs.
+
+
+WORD UP
+Let's simplify things by making the letters in our word lowercase.
+
+	the_string = "Hello"
+	the_string = the_string.lower()
+
+The .lower() function does not modify the string itself, it simply returns a lowercase-version. In the example above, we store the result back into the same variable.
+
+We also need to grab the first letter of the word.
+
+	first_letter  = the_string[0]
+	second_letter = the_string[1]
+	third_letter  = the_string[2]
+
+Remember that we start counting from zero, not one, so we access the first letter by asking for [0].
+
+
+MOVE IT ON BACK
+Now that we have the first letter stored, we need to add both the letter and the string stored in pyg to the end of the original string.
+
+Remember how to concatenate (i.e. add) strings together?
+
+	greeting = "Hello "
+	name = "D. Y."
+	welcome = greeting + name
+
+
+ENDING UP
+Well done! However, now we have the first letter showing up both at the beginning and near the end.
+
+	s = "Charlie"
+
+	print s[0]
+	# will print "C"
+
+	print s[1:4]
+	# will print "har"
+
+1.	First we create a variable s and give it the string "Charlie"
+2.	Next we access the first letter of "Charlie" using s[0]. Remember letter positions start at 0.
+3.	Then we access a slice of "Charlie" using s[1:4]. This returns everything from the letter at position 1 up till position 4.
