@@ -202,6 +202,7 @@ Advanced printing techniques
 
 
 THE DATETIME LIBRARY
+====================
 A lot of times you want to keep track of when something happened. We can do so in Python using datetime.
 
 
@@ -267,5 +268,53 @@ We've managed to print the date and time separately in a very pretty fashion. Le
 
 	print '%s/%s/%s' % (now.month, now.day, now.year)
 	print '%s:%s:%s' % (now.hour, now.minute, now.second)
-	
+
 The example above will print out the date, then on a separate line it will print the time.
+
+
+CONDITIONALS AND CONTROL FLOW
+==============================
+
+Just like in real life, sometimes we'd like our code to be able to make decisions.
+
+The Python programs we've written so far have had one-track minds: they can add two numbers or print something, but they don't have the ability to pick one of these outcomes over the other.
+
+Control flow gives us this ability to choose among outcomes based off what else is happening in the program.
+
+
+COMPARATORS
+Let's start with the simplest aspect of control flow: comparators. There are six:
+
+Equal to (==)
+Not equal to (!=)
+Less than (<)
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equal to (>=)
+Comparators check if a value is (or is not) equal to, greater than (or equal to), or less than (or equal to) another value.
+
+Note that == compares whether two things are equal, and = assigns a value to a variable.
+
+Comparisons result in either True or False, which are booleans as we learned before
+
+
+TO BE AND/OR NOT TO BE
+Boolean operators compare statements and result in boolean values. There are three boolean operators:
+
+and, which checks if both the statements are True;
+or, which checks if at least one of the statements is True;
+not, which gives the opposite of the statement.
+
+
+AND
+The boolean operator and returns True when the expressions on either side of and are true. For instance:
+
+	1 < 2 and 2 < 3 is True;
+	1 < 2 and 2 > 3 is False.
+
+
+OR
+The boolean operator or returns True when at least one expression on either side of or is true. For example:
+
+	1 < 2 or 2 > 3 is True;
+	1 > 2 or 2 > 3 is False.
