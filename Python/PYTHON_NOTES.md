@@ -318,3 +318,94 @@ The boolean operator or returns True when at least one expression on either side
 
 	1 < 2 or 2 > 3 is True;
 	1 > 2 or 2 > 3 is False.
+
+
+NOT
+The boolean operator not returns True for false statements and False for true statements.
+
+For example:
+not False will evaluate to True, while not 41 > 40 will return False.
+
+
+THIS AND THAT (OR THIS, BUT NOT THAT!)
+Boolean operators aren't just evaluated from left to right. Just like with arithmetic operators, there's an order of operations for boolean operators:
+
+not is evaluated first;
+and is evaluated next;
+or is evaluated last.
+For example, True or not False and False returns True. If this isn't clear, look at the Hint.
+
+Parentheses () ensure your expressions are evaluated in the order you want. Anything in parentheses is evaluated as its own unit.
+
+
+CONDITIONAL STATEMENT SYNTAX
+if is a conditional statement that executes some specified code after checking if its expression is True.
+
+Here's an example of if statement syntax:
+
+	if 8 < 9:
+	    print "Eight is less than nine!"
+
+In this example, 8 < 9 is the checked expression and print "Eight is less than nine!" is the specified code.
+
+Let's get some practice with if statements. Remember, the syntax looks like this:
+
+	if some_function():
+	    # block line one
+	    # block line two
+	    # et cetera
+
+Looking at the example above, in the event that some_function() returns True, then the indented block of code after it will be executed. In the event that it returns False, then the indented block will be skipped.
+
+Also, make sure you notice the colons at the end of the if statement.
+
+
+ELSE STATEMENTS
+The else statement complements the if statement. An if/else pair says: "If this expression is true, run this indented code block; otherwise, run this code after the else statement."
+
+Unlike if, else doesn't depend on an expression. For example:
+
+	if 8 > 9:
+	    print "I don't get printed!"
+	else:
+	    print "I get printed!"
+
+
+ELIF STATEMENTS
+"Elif" is short for "else if." It means exactly what it sounds like: "otherwise, if the following expression is true, do this!"
+
+	if 8 > 9:
+	    print "I don't get printed!"
+	elif 8 < 9:
+	    print "I get printed!"
+	else:
+	    print "I also don't get printed!"
+
+In the example above, the elif statement is only checked if the original if statement is False.
+
+
+THE BIG IF
+The Big If
+Really great work! Here's what you've learned in this unit:
+
+Comparators
+
+	3 < 4
+	5 >= 5
+	10 == 10
+	12 != 13
+
+Boolean operators
+
+	True or False 
+	(3 < 4) and (5 >= 5)
+	this() and not that()
+
+Conditional statements
+
+	if this_might_be_true():
+	    print "This really is true."
+	elif that_might_be_true():
+	    print "That is true."
+	else:
+	    print "None of the above."
