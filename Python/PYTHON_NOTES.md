@@ -470,3 +470,73 @@ Well done! However, now we have the first letter showing up both at the beginnin
 1.	First we create a variable s and give it the string "Charlie"
 2.	Next we access the first letter of "Charlie" using s[0]. Remember letter positions start at 0.
 3.	Then we access a slice of "Charlie" using s[1:4]. This returns everything from the letter at position 1 up till position 4.
+
+
+FUNCTIONS
+==========
+What Good are Functions?
+You might have considered the situation where you would like to reuse a piece of code, just with a few different values. Instead of rewriting the whole code, it's much cleaner to define a function, which can then be used repeatedly.
+
+
+FUNCTION JUNCTION
+Functions are defined with three components:
+
+1.	The header, which includes the def keyword, the name of the function, and any parameters the function requires. Here's an example:
+
+	def hello_world(): // There are no parameters
+
+2.	An optional comment that explains what the function does.
+
+	"""Prints 'Hello World!' to the console."""
+
+3.	The body, which describes the procedures the function carries out. The body is indented, just like for conditional statements.
+
+	print "Hello World!"
+
+Here's the full function pieced together:
+
+	def hello_world():
+	    """Prints 'Hello World!' to the console."""
+	    print "Hello World!"
+
+
+CALL AND RESPONSE
+After defining a function, it must be called to be implemented. In the previous exercise, spam() in the last line told the program to look for the function called spam and execute the code inside it.
+
+
+PARAMETERS AND ARGUMENTS
+Let's reexamine the first line that defined square in the previous exercise:
+
+def square(n):
+n is a parameter of square. A parameter acts as a variable name for a passed in argument. With the previous example, we called square with the argument 10. In this instance the function was called, n holds the value 10.
+
+A function can require as many parameters as you'd like, but when you call the function, you should generally pass in a matching number of arguments.
+
+ex.
+Check out the function in the editor, power. It should take two arguments, a base and an exponent, and raise the first to the power of the second. It's currently broken, however, because its parameters are missing.
+
+Replace the ___s with the parameters base and exponent and call power on a base of 37 and a power of 4.
+
+	def power(base, exponent):  # Add your parameters here!
+    result = base**exponent
+    print "%d to the power of %d is %d." % (base, exponent, result)
+
+	power(37,4)  # Add your arguments here!
+
+
+FUNCTIONS CALLING FUNCTIONS
+We've seen functions that can print text or do simple arithmetic, but functions can be much more powerful than that. For example, a function can call another function:
+
+	def fun_one(n):
+	    return n * 5
+
+	def fun_two(m):
+	    return fun_one(m) + 7
+
+
+IMPORTING A MODULE
+Remember import this from the first exercise in this course? That was an example of importing a module. A module is a file that contains definitions—including variables and functions—that you can use once it is imported.
+
+
+GENERIC IMPORTS
+There is a Python module named math that includes a number of useful variables and functions, and sqrt() is one of those functions. In order to access math, all you need is the import keyword. When you simply import a module this way, it's called a generic import.

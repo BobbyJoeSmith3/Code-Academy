@@ -20,9 +20,12 @@ pyg = "ay"
 
 # Write an if statement that verifies that the string has characters.
 if (len(original) > 0) and original.isalpha():
-    word = original.lower()		#Set user entry to lowercase
-    first = word[0]				#Set variable 'first' to the first letter of the variable 'word'
-    new_word = word[1:len(word)] + first + pyg  #Concatenate variables to create new phrase in pyglatin
+    #Set user entry to lowercase
+    word = original.lower()		
+    #Set variable 'first' to the first letter of the variable 'word'
+    first = word[0]	
+    #Slice string so that all but the first letter of the stored string is displayed. Concatenate variables to create new phrase in pyglatin
+    new_word = word[1:len(word)] + first + pyg  
     print new_word
 elif (len(original) > 0) and original.isalpha() == False:
     print "no numbers, symbols, or spaces please!"
