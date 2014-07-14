@@ -385,7 +385,6 @@ In the example above, the elif statement is only checked if the original if stat
 
 
 THE BIG IF
-The Big If
 Really great work! Here's what you've learned in this unit:
 
 Comparators
@@ -409,3 +408,22 @@ Conditional statements
 	    print "That is true."
 	else:
 	    print "None of the above."
+
+
+PYGLATIN
+========
+.ISALPHA()
+Now we know we have a non-empty string. Let's be even more thorough.
+
+	x = "J123"
+	x.isalpha()  # False
+
+In the first line, we create a string with letters and numbers.
+
+The second line then runs the function isalpha() which returns False since the string contains non-letter characters.
+
+Let's make sure the word the user enters contains only alphabetical characters. You can use isalpha() to check this!
+
+
+TESTING
+When you finish one part of your program, it's important to test it multiple times, using a variety of inputs.
