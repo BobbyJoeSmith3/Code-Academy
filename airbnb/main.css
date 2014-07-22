@@ -1,0 +1,48 @@
+/* Style for 'a' elements inside of the navigation bar */
+.nav a {
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+/* Style for the large feature section of index.html */
+.jumbotron {
+    height: 500px;
+    background-image: url('http://goo.gl/04j7Nn')
+}
+
+/* Style 'h1' elements inside of the large feature section of index.html */
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Shift", sans-serif;
+}
+
+/* Style 'p' elements inside of the large feature section of index.html */
+.jumbotron p {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Style for the "learn more" section of index.html */
+.learn-more {
+    background-color: #f7f7f7;
+}
+
+/* Style the 'h3' elements in the "learn-more" section of index.html */
+.learn-more h3 {
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for the 'a' elements in the "learn-more" section of index.html */
+.learn-more a {
+    color: #00b0ff;
+}
