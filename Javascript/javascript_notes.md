@@ -5,10 +5,10 @@ This is JavaScript (JS), a programming language. There are many languages, but J
 
 ####What can we use JavaScript for?
 
-   *make websites respond to user interaction
-   *build apps and games (e.g. blackjack)
-   *access information on the Internet (e.g. find out the top trending words on Twitter by topic)
-   *organize and present data (e.g. automate spreadsheet work; data visualization)
+   * make websites respond to user interaction
+   * build apps and games (e.g. blackjack)
+   * access information on the Internet (e.g. find out the top trending words on Twitter by topic)
+   * organize and present data (e.g. automate spreadsheet work; data visualization)
 
 
 ####Editor and comments
@@ -24,8 +24,8 @@ What we just saw was a fun example of how JavaScript can be interactive. Try it 
 
 Examples:
 
-```confirm("I feel awesome!");
-confirm("I am ready to go.");```
+```confirm("I feel awesome!");```
+```confirm("I am ready to go.");```
 
 These boxes can be used on websites to confirm things with users. You've probably seen them pop up when you try to delete important things or leave a website with unsaved changes.
 
@@ -39,11 +39,11 @@ You may have noticed that the interpreter doesn't print out every single thing i
 
 ####List of comparison operators:
 
-  > Greater than
-  < Less than
-  <= Less than or equal to
-  >= Greater than or equal to
-  === Equal to
-  !== Not equal to
+  * > Greater than
+  * < Less than
+  * <= Less than or equal to
+  * >= Greater than or equal to
+  * === Equal to
+  * !== Not equal to
 
 This is commonly called printing out.
