@@ -56,7 +56,7 @@ We can make pop-up boxes appear!
 ```confirm("I am ok");```  
 ```prompt("Are you ok?");```
 
-** 2. Data types **
+**2. Data types**
 
   a. numbers (e.g. ```4.3```, ```134```)
 
@@ -64,7 +64,7 @@ We can make pop-up boxes appear!
 
   c. booleans (e.g. ```false```, ```5 > 4```)
 
-3. Conditionals
+**3. Conditionals**
 
 *If* the first condition is met, execute the first code block. *If* it is not met, execute the code in the ```else``` block. See the code on the right for another example.
 
