@@ -50,7 +50,7 @@ This is commonly called printing out.
 ####Mid-lesson Review
 We've covered a lot of ground so far! So many new terms, so much syntax. Let's take a breather and review. We have learned:
 
-** 1. Confirm and prompt **
+**1. Confirm and prompt**
 
 We can make pop-up boxes appear! 
 ```confirm("I am ok");```  
