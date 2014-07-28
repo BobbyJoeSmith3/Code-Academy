@@ -129,10 +129,14 @@ Therefore if you start at position ```0```, and slice right up till position ```
 **More examples:**
 
 1. First 3 letters of "Batman"
-```"Batman".substring(0,3);```
+```
+"Batman".substring(0,3);
+```
 
 2. From 4th to 6th letter of "laptop"
-```"laptop".substring(3,6);```
+```
+"laptop".substring(3,6);
+```
 
 ####Variables
 We have learned how to do a few things now: make strings, find the length of strings, find what character is in the nth position, do basic math. Not bad for a day's work!
@@ -171,3 +175,10 @@ We store data values in variables. We can bring back the values of these variabl
 
 **console.log( )** 
 Prints into the console whatever we put in the parentheses.
+
+####Conclusion: Part 2
+Congratulations on making it this far. You have learned a lot! Just one more exercise before a big pat on the back!
+
+The last tricky thing we learned was about **if / else** statements.
+
+If / else statements are conditional statements. Under different conditions, the computer will output different things.
