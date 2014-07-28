@@ -182,3 +182,85 @@ Congratulations on making it this far. You have learned a lot! Just one more exe
 The last tricky thing we learned was about **if / else** statements.
 
 If / else statements are conditional statements. Under different conditions, the computer will output different things.
+
+##INTRODUCTION TO FUNCTIONS
+####Introduction
+Programming is simply a way to give instructions to the computer.
+
+In Getting Started, we learned about if / else statements.
+
+We want to keep learning ways to instruct the computer to perform repeatable tasks efficiently.
+
+
+####Introducing Functions
+Programming is similar to baking cakes. Seriously! Imagine you are trying to teach your friend Jane how to bake many different types of cakes.
+
+Each cake takes in different ingredients (ie. **inputs**). But the 'bake' instructions are always the same. For example:
+
+1. Pre-heat the oven at 300 degrees
+2. Mix all the ingredients in a bowl
+3. Put contents into oven for 30 mins
+
+And the **output** will be a different cake each time.
+
+It is tedious to have to repeat to Jane the same 'bake' instructions every time. What if we could just say 'bake' and Jane would know to execute those three steps? That is exactly what a function is!
+
+**Example:**
+1. Line 3 declares the function and gives it a name.
+2. Focus on line 4 and line 5. The code within the curly brackets ```{ }``` is the code we want to use again and again. (i.e. the 'bake' instructions)
+3. Line 4 declares a variable called ```val```. Line 5 prints the value of that variable.
+4. On line 8-11, we explain what **calling** a function means.
+5. On line 12, replace the ```6``` with any number and press Save & Submit Code. Do this a few times to see the beauty of functions!
+
+```
+// This is what a function looks like:
+
+var divideByThree = function (number) {
+    var val = number / 3;
+    console.log(val);
+};
+
+// On line 12, we call the function by name
+// Here, it is called 'dividebythree'
+// We tell the computer what the number input is (i.e. 6)
+// The computer then runs the code inside the function!
+divideByThree(6);
+```
+
+####Function syntax
+A function takes in inputs, does something with them, and produces an output.
+
+Here's an example of a function:
+```
+var sayHello = function(name) {
+    console.log('Hello ' + name);
+};
+```
+
+1. First we declare a function using ```var```, and then give it a name ```sayHello```. The name should begin with a lowercase letter and the convention is to use lowerCamelCase where each word (except the first) begins with a capital letter.
+2. Then we use the ```function``` keyword to tell the computer that you are making a function
+3. The code in the parentheses is called a **parameter**. It's a placeholder word that we give a specific value when we call the function. Click "Stuck? Get a hint!" for more.
+4. Then write your block of reusable code between ```{ }```. Every line of code in this block must end with a ```;```.
+
+You can run this code by "calling" the function, like this:
+```
+sayHello("Emily");
+```
+Calling this function will print out ```Hello Emily```.
+
+####How does a function work?
+Let's break down exactly how a computer thinks when it sees the code for a function.
+```
+var functionName = function( ) {
+    // code code code
+    // code code code
+    // (more lines of code)
+};
+```
+1. The ```var``` keyword declares a variable named ```functionName```.
+2. The keyword ```function``` tells the computer that ```functionName``` is a function and not something else.
+3. Parameters go in the parentheses. The computer will look out for it in the code block.
+4. The code block is the reusable code that is between the curly brackets ```{ }```. Each line of code inside ```{ }``` must end with a semi-colon.
+5. The entire function ends with a semi-colon.
+
+To use the function, we **call** the function by just typing the function's name, and putting a parameter value inside parentheses after it. The computer will run the reusable code with the specific parameter value substituted into the code.
