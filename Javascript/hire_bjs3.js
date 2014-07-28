@@ -27,5 +27,28 @@ console.log("\nSuddenly, Bieber stops and says, 'Who wants to race me?'");
 
 //Declare a variable userAnswer and ask user if they want to race Bieber
 //If user receives a prompt to answer if they want to race Bieber, and answer is stored to variable userAnswer, then pass
-var userAnswer = prompt("Do you want to race Bieber on stage?");
+var userAnswer = prompt("Do you want to race Bieber on stage? (yes/no)");
+
+//Provide a story based on user response
+//If appropriate user story is displayed given user input, then pass
+//*Note* : Use else if to improve user experience by responding to no's and non-sensical responses  
+if (userAnswer === "yes") {
+	console.log("\nYou and Bieber start racing. It's neck and neck! You win by a shoelace!");
+}
+else {
+	console.log("\nOh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");
+}
+
+//Ask user for feedback
+//If user receives a prompt to provide feedback, and input is saved as variable feedback, then pass
+var feedback = prompt("Did you enjoy the game? Please rate the game from 1-10.");
+
+//Provide a response based on user's input
+//If appropriate response is displayed for feedback greater than and equal to 8, and less than 8, then pass
+if (feedback >= 8) {
+	console.log("\nThank you! We should race at the next concert!");
+} 
+else {
+	console.log("\nI'll keep practicing coding and racing.");
+}
 
