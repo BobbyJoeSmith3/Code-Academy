@@ -40,11 +40,18 @@ var compare = function (choice1, choice2) {
         } else {
             return "scissors wins"
         }; 
-    } else (choice1 === "scissors") {
+    } else if (choice1 === "scissors") {
         if (choice2 === "rock") {
             return "rock wins";
         } else {
             return "scissors wins";
         };
+    } else {
+        console.log("Terribly sorry, not sure if that was supposed to be 'rock', 'paper', or 'scissors'. Please try again!");
+        return userChoice;
+    }
     };    
 };
+
+//compare the user's choice with the computer's choice
+compare(userChoice, computerChoice);
